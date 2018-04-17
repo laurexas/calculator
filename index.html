@@ -1,0 +1,64 @@
+<head>
+    <meta charset="utf-8">
+  
+    <title>calculator</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="calculator/style.css">
+    <script src="index.js"></script>
+</head>
+<style>
+    .btn {
+        width: 40px;
+        margin: 1px;
+        display: inline-block;
+        align-items: center;
+   
+    }
+    .btn-primary {
+        width: 40px;
+        margin: 1px;
+    display: inline-block;
+       align-items: center;
+    }
+    
+    
+</style>
+<body>
+<div class="first-row">
+    <input id="innerValue" type="text" class="input-data"></input>
+    <button id="btn" class="btn-danger" onclick="cleanNumber()">C</button>
+</div>
+<div class="second-row">
+        <button id="btn-one" class="btn" onclick="takeNumber('1')">1</button>
+        <button id="btn-two" class="btn" onclick="takeNumber('2')">2</button>
+        <button id="btn-three" class="btn" onclick="takeNumber('3')">3</button>
+        <button id="btn-four" class="btn" onclick="takeNumber('+')">+</button>
+</div>
+<div class="third-row">
+        <button id="btn-five" class="btn" onclick="takeNumber('4')">4</button>
+        <button id="btn-six" class="btn" onclick="takeNumber('5')">5</button>
+        <button id="btn-seven" class="btn" onclick="takeNumber('6')">6</button>
+        <button id="btn-eigth" class="btn" onclick="takeNumber('-')">-</button>
+</div>
+<div class="fourth-row">
+        <button id="btn-nine" class="btn"onclick="takeNumber('7')">7</button>
+        <button id="btn-ten" class="btn"onclick="takeNumber('8')">8</button>
+        <button id="btn-eleven" class="btn" onclick="takeNumber('9')">9</button>
+        <button id="btn-twelwe" class="btn" onclick="takeNumber('*')">x</button>
+</div>
+<div class="fifth-row">
+        <button id="btn-thirth" class="btn" onclick="takeNumber('0')">0</button>
+        <button id="btn-fourteen" class="btn" onclick="takeNumber('.')">.</button>
+        <button id="btn-fifteen" class="btn-primary" onclick="makeResult()">=</button>
+        <button id="btn-sixteen" class="btn" onclick="takeNumber('/')">/</button>
+        
+</div>
+
+    
+</body>
+
+
